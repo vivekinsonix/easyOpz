@@ -25,11 +25,11 @@ export default function About() {
                 ))}
             </div> */}
 
-            <div className="grid md:grid-cols-4 gap-6 mt-12 cursor-pointer">
+            <div className="grid md:grid-cols-4  sm:grid-cols-2 gap-6 mt-12 cursor-pointer">
 
                 <div
 
-                    className="relative h-full rounded-xl overflow-hidden group p-3 shadow-lg"
+                    className="relative h-100 rounded-xl overflow-hidden group p-3 shadow-lg"
                     style={{
                         backgroundImage: `url(/blog1.jpeg)`,
                         backgroundSize: "cover",
