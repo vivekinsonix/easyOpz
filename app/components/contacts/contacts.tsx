@@ -28,7 +28,7 @@ export default function Contact() {
 
 
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                    eady to simplify
+                    Ready to simplify
                     <br />
                     your operations?
                 </h1>
