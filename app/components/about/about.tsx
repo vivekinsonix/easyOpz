@@ -50,7 +50,7 @@ export default function About() {
                      group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 
                      transition-all duration-300"
                         >
-                            Read More
+                            Get Started
                         </button>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ export default function About() {
                      group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 
                      transition-all duration-300"
                         >
-                            Read More
+                            Get Started
                         </button>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ export default function About() {
                      group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 
                      transition-all duration-300"
                         >
-                            Read More
+                            Get Started
                         </button>
                     </div>
                 </div>
@@ -133,7 +133,7 @@ export default function About() {
                      group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 
                      transition-all duration-300"
                         >
-                            Read More
+                            Get Started
                         </button>
                     </div>
                 </div>
