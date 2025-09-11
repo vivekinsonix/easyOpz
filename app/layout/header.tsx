@@ -3,7 +3,7 @@
 
 export default function Header() {
     return (
-        <header className="bg-primary text-white">
+        <header className="bg-transparent text-white Z-50">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 <h2 className="text-xl font-bold">EasyOpz</h2>
                 <nav className="flex space-x-6 items-center">
