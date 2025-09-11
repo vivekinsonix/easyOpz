@@ -25,7 +25,7 @@ export default function About() {
                 ))}
             </div> */}
 
-            <div className="grid md:grid-cols-4  sm:grid-cols-2 gap-6 mt-12 cursor-pointer">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2  sm:grid-cols-2 gap-6 mt-12 cursor-pointer">
 
                 <div
 
