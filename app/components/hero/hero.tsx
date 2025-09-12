@@ -17,7 +17,7 @@ export default function Hero() {
             </video>
 
             {/* Overlay for better readability */}
-            <div className="absolute inset-0 bg-black/50 z-0"></div>
+            <div className="absolute inset-0 bg-black/70 z-0"></div>
 
             {/* Content */}
             <div className="relative z-10"> <Header /></div>

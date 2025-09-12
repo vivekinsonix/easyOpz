@@ -2,9 +2,9 @@
 "use client";
 
 const plans = [
-    { name: "Starter", price: "$9/mo", features: ["Basic task management", "1 Dashboard", "Email support"], highlight: false },
-    { name: "Pro", price: "$29/mo", features: ["Advanced analytics", "Unlimited dashboards", "Team collaboration", "Priority support"], highlight: true },
-    { name: "Enterprise", price: "Custom", features: ["Custom workflows", "Dedicated support", "Enhanced security", "Scalable solutions"], highlight: false }
+    { name: "Starter", price: "1500/PM", features: ["1st 100 customers: 750/PM", "1 Store", "Upto 4 devices", "Includes: customer ordering, front desk, inventory, order management, flexi-customer payment management"], highlight: false },
+    { name: "Pro", price: "3000/PM", features: ["1st 100 customers: 1500/PM", "Upto 3 stores", "Interconnectivity of multiple outlets"], highlight: true },
+    { name: "Enterprise", price: "Custom", features: ["Whatsapp", "Email", "sms automation and customer journey mapping", "custom software development and  integration services", "SEO services"], highlight: false }
 ];
 
 
