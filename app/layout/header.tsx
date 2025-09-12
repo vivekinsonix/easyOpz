@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const customTheme = {
     root: {
-        base: "bg-white/70 dark:bg-gray-900/80  py-4 rounded-xl  text-white",
+        base: "bg-white/70 dark:bg-transparent  py-4 rounded-xl  text-white",
         rounded: {
             on: "rounded-xl",
             off: "",
@@ -34,20 +34,18 @@ export default function Header() {
         <>
             <div className="container mx-auto r py-4 ">
 
-                <Navbar className="bg-transparent" fluid rounded theme={customTheme}>
+                <Navbar className="bg-transparent dark:bg-transparent" fluid rounded theme={customTheme}>
                     <NavbarBrand href="#">
 
                         <span className="self-center whitespace-nowrap text-xl font-bold dark:text-white">EasyOpz</span>
                     </NavbarBrand>
                     <div className="flex md:order-2">
-                        <Button className="bg-black hover:bg-highlight hover:text-black">Get started</Button>
+                        <Button className="bg-black hover:bg-highlight hover:text-black dark:bg-black dark:hover:bg-highlight">Get started</Button>
                         <NavbarToggle />
                     </div>
                     <NavbarCollapse >
-                        <NavbarLink className="hover:text-highlight !border-0 bg-transparent-0" href="/" active>
-                            Home
-                        </NavbarLink>
-                        <NavbarLink className="hover:text-highlight !border-0" href="#features">About</NavbarLink>
+
+                        <NavbarLink className="hover:text-highlight !border-0 bg-transparent-0 dark:bg-transparent" href="#features" active>About</NavbarLink>
                         <NavbarLink className="hover:text-highlight !border-0" href="#features">Features</NavbarLink>
                         <NavbarLink className="hover:text-highlight !border-0" href="#pricing">Pricing</NavbarLink>
 
