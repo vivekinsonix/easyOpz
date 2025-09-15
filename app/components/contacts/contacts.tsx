@@ -36,7 +36,7 @@ export default function Contact() {
                     EasyOpz helps businesses streamline workflows, reduce complexity, and focus on growth.
                 </p>
                 <div className="mt-6 space-x-4">
-                    <button className="bg-highlight text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-500">
+                    <button className="bg-highlight cursor-pointer text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-500">
                         Get Started Now
                     </button>
                 </div>

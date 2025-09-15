@@ -40,7 +40,7 @@ export default function Header() {
                         <span className="self-center whitespace-nowrap text-xl font-bold dark:text-white">EasyOpz</span>
                     </NavbarBrand>
                     <div className="flex md:order-2">
-                        <Button className="bg-black hover:bg-highlight hover:text-black dark:bg-black dark:hover:bg-highlight">Get started</Button>
+                        <Button className="cursor-pointer bg-transparent border text-highlight border-highlight hover:bg-highlight hover:text-black dark:bg-black dark:hover:bg-highlight">Get started</Button>
                         <NavbarToggle />
                     </div>
                     <NavbarCollapse >

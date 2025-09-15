@@ -16,7 +16,7 @@ const ZeroTrainingIcon: FC<{ className?: string }> = ({ className }) => (
     >
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#14b8a6" />   {/* teal-500 */}
+                <stop offset="10%" stopColor="#ffbc0d" />   {/* teal-500 */}
                 <stop offset="100%" stopColor="#ffbc0d" /> {/* indigo-500 */}
             </linearGradient>
         </defs>
@@ -48,8 +48,8 @@ const CollaborationIcon: FC<{ className?: string }> = ({ className }) => (
     >
         <defs>
             <linearGradient id="collabGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffbc0d" />   {/* teal-500 */}
-                <stop offset="100%" stopColor="#6366f1" /> {/* indigo-500 */}
+                <stop offset="10%" stopColor="#ffbc0d" />   {/* teal-500 */}
+                <stop offset="100%" stopColor="#ffbc0d" /> {/* indigo-500 */}
             </linearGradient>
         </defs>
 
@@ -72,7 +72,7 @@ const PerformanceIcon: FC<{ className?: string }> = ({ className }) => (
         <defs>
             <linearGradient id="perfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#ffbc0d" />   {/* teal-500 */}
-                <stop offset="100%" stopColor="#6366f1" /> {/* indigo-500 */}
+                <stop offset="100%" stopColor="#ffbc0d" /> {/* indigo-500 */}
             </linearGradient>
         </defs>
 
@@ -96,7 +96,7 @@ const ScalableIcon: FC<{ className?: string }> = ({ className }) => (
         <defs>
             <linearGradient id="secureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#ffbc0d" />   {/* cyan-500 */}
-                <stop offset="100%" stopColor="#3b82f6" /> {/* blue-500 */}
+                <stop offset="100%" stopColor="#ffbc0d" /> {/* blue-500 */}
             </linearGradient>
         </defs>
 
@@ -120,7 +120,7 @@ const SatisfactionIcon: FC<{ className?: string }> = ({ className }) => (
         <defs>
             <linearGradient id="satisfactionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#f59e0b" />   {/* amber-500 */}
-                <stop offset="100%" stopColor="#3b82f6" /> {/* red-500 */}
+                <stop offset="100%" stopColor="#ffbc0d" /> {/* red-500 */}
             </linearGradient>
         </defs>
 
@@ -148,7 +148,7 @@ const TailorIcon: FC<{ className?: string }> = ({ className }) => (
         <defs>
             <linearGradient id="collabGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#f59e0b" />   {/* emerald-500 */}
-                <stop offset="100%" stopColor="#3b82f6" /> {/* blue-500 */}
+                <stop offset="100%" stopColor="#ffbc0d" /> {/* blue-500 */}
             </linearGradient>
         </defs>
 

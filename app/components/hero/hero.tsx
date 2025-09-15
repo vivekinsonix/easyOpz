@@ -33,10 +33,10 @@ export default function Hero() {
                     EasyOpz helps businesses streamline workflows, reduce complexity, and focus on growth.
                 </p>
                 <div className="mt-6 space-x-4">
-                    <button className="bg-secondary px-6 py-3 rounded-md font-semibold hover:bg-teal-600">
+                    <button className="bg-secondary hover:bg-secondary/80 px-6 py-3 rounded-md font-semibold cursor-pointer">
                         Start Free Trial
                     </button>
-                    <button className="bg-highlight text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-500">
+                    <button className="bg-highlight text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-500 cursor-pointer">
                         See Demo
                     </button>
                 </div>
