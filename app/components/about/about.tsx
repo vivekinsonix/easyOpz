@@ -16,8 +16,8 @@ const ZeroTrainingIcon: FC<{ className?: string }> = ({ className }) => (
     >
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="10%" stopColor="#ffbc0d" />   {/* teal-500 */}
-                <stop offset="100%" stopColor="#ffbc0d" /> {/* indigo-500 */}
+                <stop offset="10%" stopColor="#de1f26" />   {/* teal-500 */}
+                <stop offset="100%" stopColor="#de1f26" /> {/* indigo-500 */}
             </linearGradient>
         </defs>
 
@@ -48,8 +48,8 @@ const CollaborationIcon: FC<{ className?: string }> = ({ className }) => (
     >
         <defs>
             <linearGradient id="collabGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="10%" stopColor="#ffbc0d" />   {/* teal-500 */}
-                <stop offset="100%" stopColor="#ffbc0d" /> {/* indigo-500 */}
+                <stop offset="10%" stopColor="#de1f26" />   {/* teal-500 */}
+                <stop offset="100%" stopColor="#de1f26" /> {/* indigo-500 */}
             </linearGradient>
         </defs>
 
@@ -66,21 +66,30 @@ const PerformanceIcon: FC<{ className?: string }> = ({ className }) => (
         fill="none"
         viewBox="0 0 64 64"
         className={className}
-        stroke="url(#perfGradient)"
-        strokeWidth="3"
+        stroke="url(#perfGradient)"   // 👈 gradient stroke
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
     >
         <defs>
             <linearGradient id="perfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffbc0d" />   {/* teal-500 */}
-                <stop offset="100%" stopColor="#ffbc0d" /> {/* indigo-500 */}
+                <stop offset="10%" stopColor="#de1f26" />   {/* sky-500 */}
+                <stop offset="100%" stopColor="#de1f26" /> {/* indigo-500 */}
             </linearGradient>
         </defs>
 
-        <path d="M12 52h40" />
-        <rect x="16" y="32" width="6" height="20" fill="url(#perfGradient)" />
-        <rect x="28" y="24" width="6" height="28" fill="url(#perfGradient)" />
-        <rect x="40" y="16" width="6" height="36" fill="url(#perfGradient)" />
+
+        <rect x="6" y="6" width="52" height="52" rx="6" ry="6" />
+
+
+        <polyline points="14,42 26,30 36,38 50,20" />
+
+
+        <circle cx="26" cy="30" r="2" fill="url(#perfGradient)" />
+        <circle cx="36" cy="38" r="2" fill="url(#perfGradient)" />
+        <circle cx="50" cy="20" r="2" fill="url(#perfGradient)" />
     </svg>
+
 );
 
 // 4. Scalable, Secure & Affordable
@@ -95,8 +104,8 @@ const ScalableIcon: FC<{ className?: string }> = ({ className }) => (
     >
         <defs>
             <linearGradient id="secureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffbc0d" />   {/* cyan-500 */}
-                <stop offset="100%" stopColor="#ffbc0d" /> {/* blue-500 */}
+                <stop offset="0%" stopColor="#de1f26" />   {/* cyan-500 */}
+                <stop offset="100%" stopColor="#de1f26" /> {/* blue-500 */}
             </linearGradient>
         </defs>
 
@@ -139,22 +148,39 @@ const SatisfactionIcon: FC<{ className?: string }> = ({ className }) => (
 const TailorIcon: FC<{ className?: string }> = ({ className }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        fill="none"
         viewBox="0 0 64 64"
+        fill="none"
         className={className}
-        stroke="url(#collabGradient)"
+        stroke="url(#customGradient)"
         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
     >
         <defs>
-            <linearGradient id="collabGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#f59e0b" />   {/* emerald-500 */}
-                <stop offset="100%" stopColor="#ffbc0d" /> {/* blue-500 */}
+            <linearGradient id="customGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="10%" stopColor="#de1f26" /> {/* teal-ish */}
+                <stop offset="100%" stopColor="#de1f26" /> {/* indigo */}
             </linearGradient>
         </defs>
 
-        <circle cx="32" cy="32" r="6" fill="url(#collabGradient)" />
-        <path d="M32 14v6M32 44v6M14 32h6M44 32h6M20 20l4 4M40 40l4 4M44 20l-4 4M24 40l-4 4" />
+
+        <g transform="translate(38,38) scale(0.9)">
+            <circle cx="0" cy="0" r="8" />
+            <path d="M10 0 L13 0 M-10 0 L-13 0 M0 10 L0 13 M0 -10 L0 -13 M7 7 L9.5 9.5 M-7 -7 L-9.5 -9.5 M7 -7 L9.5 -9.5 M-7 7 L-9.5 9.5" />
+        </g>
+
+
+        <path d="M16 44c0-8 4-14 12-18 8-4 14-2 18 2l-8 8c-4 4-10 6-22 8z" />
+        <path d="M28 18c2 2 4 3 6 3" />
+
+        <path d="M12 52c4 0 6-4 6-4s-2 2-6 2" fill="url(#customGradient)" stroke="none" opacity="0.95" />
+
+
+        <circle cx="50" cy="14" r="1.6" fill="url(#customGradient)" stroke="none" />
     </svg>
+
+
+
 
 );
 
@@ -222,7 +248,7 @@ export default function About() {
                         {/* Background Video */}
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            src="/b1.mp4"
+                            src="/cafe.mp4"
                             autoPlay
                             loop
                             muted
@@ -234,7 +260,7 @@ export default function About() {
 
                         {/* Content */}
                         <div className="absolute inset-0 flex flex-col items-center justify-end text-center text-white p-6">
-                            <h3 className="text-2xl font-bold ">Restaurants</h3>
+                            <h3 className="text-2xl font-bold ">Restaurants and cafés</h3>
 
 
                             {/* Hidden Button, shown on hover */}
@@ -252,7 +278,7 @@ export default function About() {
                         {/* Background Video */}
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            src="/b2.mp4"
+                            src="/boutique.mp4"
                             autoPlay
                             loop
                             muted
@@ -264,7 +290,7 @@ export default function About() {
 
                         {/* Content */}
                         <div className="absolute inset-0 flex flex-col items-center justify-end text-center text-white p-6">
-                            <h3 className="text-2xl font-bold mb-2">Retailers </h3>
+                            <h3 className="text-2xl font-bold mb-2">Retail and boutique outlets </h3>
                             {/* <p className="text-sm opacity-80">Super easy to use via progressive web app interface that runs without need for any installatio</p> */}
 
                             {/* Hidden Button, shown on hover */}
@@ -282,7 +308,7 @@ export default function About() {
                         {/* Background Video */}
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            src="/b3.mp4"
+                            src="/distributors.mp4"
                             autoPlay
                             loop
                             muted
@@ -294,7 +320,7 @@ export default function About() {
 
                         {/* Content */}
                         <div className="absolute inset-0 flex flex-col items-center justify-end text-center text-white p-6">
-                            <h3 className="text-2xl font-bold mb-2">Distributors </h3>
+                            <h3 className="text-2xl font-bold mb-2">Distributors and wholesalers </h3>
                             {/* <p className="text-sm opacity-80">Keep internal employees aligned with user-based dashboards</p> */}
 
                             {/* Hidden Button, shown on hover */}
@@ -312,7 +338,7 @@ export default function About() {
                         {/* Background Video */}
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            src="/b4.mp4"
+                            src="/grocery.mp4"
                             autoPlay
                             loop
                             muted
@@ -324,7 +350,7 @@ export default function About() {
 
                         {/* Content */}
                         <div className="absolute inset-0 flex flex-col items-center justify-end text-center text-white p-6">
-                            <h3 className="text-2xl font-bold mb-2">Traders </h3>
+                            <h3 className="text-2xl font-bold mb-2">Grocery and convenience store </h3>
 
 
                             {/* Hidden Button, shown on hover */}
