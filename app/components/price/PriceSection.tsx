@@ -8,8 +8,8 @@ const plans = [
         name: "Starter",
         monthly: 1500,
         yearly: 14400,
+        note: "750/PM",
         features: [
-            "1st 100 customers: 750/PM",
             "1 Store",
             "Customer ordering",
             "Front desk",
@@ -17,14 +17,14 @@ const plans = [
             "Order management",
             "Flexi-customer payment management",
         ],
-        highlighted: false,
+        highlighted: true,
     },
     {
         name: "Pro",
         monthly: 3000,
         yearly: 28800,
+        note: "1500/PM",
         features: [
-            "1st 100 customers: 1500/PM",
             "Upto 3 stores",
             "Interconnectivity of multiple outlets ",
         ],
@@ -50,7 +50,7 @@ export default function PriceSection() {
     const [yearly, setYearly] = useState(false);
 
     return (
-        <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-20" id="pricing">
+        <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-50 dark:to-white-50 py-20" id="pricing">
             <div className="max-w-screen-xl mx-auto px-6 lg:px-12 text-center">
                 {/* Heading */}
                 <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -90,11 +90,7 @@ export default function PriceSection() {
                                         <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
                                             {plan.name}
                                         </h3>
-                                        {plan.highlighted && (
-                                            <Badge color="info" size="sm">
-                                                Most Popular
-                                            </Badge>
-                                        )}
+
                                     </div>
 
                                     {/* Price */}
@@ -110,6 +106,14 @@ export default function PriceSection() {
                                             </>
                                         )}
                                     </p>
+                                    {plan.highlighted && (
+                                        <div className="flex">
+                                            <Badge color="info" size="sm" className="m-auto">
+                                                1st 100 customers {plan.note}
+                                            </Badge>
+                                        </div>
+                                    )}
+
 
                                     {/* Features */}
                                     <ul className="mt-8 space-y-4 text-left text-gray-700 dark:text-gray-300">
@@ -125,10 +129,10 @@ export default function PriceSection() {
                                 <div className="mt-10">
                                     <button
                                         className={`w-full cursor-pointer rounded-xl px-5 py-3 font-semibold transition ${plan.name === "Enterprise"
-                                            ? "border-1 border-highlight text-highlight hover:bg-highlight hover:text-black dark:border-highlight dark:hover:text-black dark:text-black dark:hover:bg-highlight"
+                                            ? "border-1 border-highlight text-highlight hover:bg-highlight hover:text-black dark:border-highlight dark:hover:text-black dark:text-highlight dark:hover:bg-highlight"
                                             : plan.highlighted
-                                                ? "bg-highlight text-black hover:bg-highlight/80"
-                                                : "border-1 border-highlight text-highlight hover:bg-highlight hover:text-black dark:border-highlight dark:hover:text-black dark:text-black dark:hover:bg-highlight"
+                                                ? "bg-highlight text-black hover:bg-highlight/80 dark:border-highlight dark:hover:text-black dark:text-black dark:hover:bg-highlight/80"
+                                                : "border-1 border-highlight text-highlight hover:bg-highlight hover:text-black dark:border-highlight dark:hover:text-black dark:text-highlight dark:hover:bg-highlight"
                                             }`}
                                     >
                                         {plan.name === "Enterprise"
